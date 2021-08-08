@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .container {
@@ -98,6 +100,17 @@ article {
   margin-top: 50px;
 }
 
+article .main_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 130px;
+}
+
+.title_container {
+  font-size: 50px;
+}
+
 article .background-img-container img {
   z-index: -1;
   width: 100%;
@@ -105,15 +118,6 @@ article .background-img-container img {
   background-repeat: no-repeat;
   opacity: 20%;
   position: absolute;
-  margin-top: -50px;
-}
-
-article header {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  margin-left: 12%;
-  font-size: xx-large;
-  transform: scaleY(1.1);
 }
 
 article header span {
@@ -126,7 +130,34 @@ article header span {
   width: 60%;
   right: 0;
   top: 0;
-  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  article .main_section {
+    margin-left: 30px;
+  }
+
+  .title_container {
+    font-size: 30px;
+  }
+
+  article header span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  article .main_section {
+    margin-left: 20px;
+  }
+
+  .title_container {
+    font-size: 26px;
+  }
+
+  article header span {
+    font-size: 13px;
+  }
 }
 
 aside img {
