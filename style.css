@@ -36,17 +36,6 @@ nav span {
   font-size: -webkit-xxx-large;
 }
 
-.navLink::after {
-  content: "";
-  height: 0.25em;
-  width: 0.25em;
-  background: #7c6b6e;
-  transform: rotate(45deg);
-  position: absolute;
-  margin-left: 18px;
-  margin-top: 8px;
-}
-
 nav ul .search {
   position: relative;
   width: 15px;
@@ -64,6 +53,44 @@ nav ul .search::after {
   margin-left: 11px;
   margin-top: 8px;
   transform: rotate(-45deg);
+}
+
+@media (max-width: 600px) {
+  nav {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  nav span {
+    font-size: 25px;
+  }
+
+  .container {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  nav {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  nav span {
+    font-size: 25px;
+  }
+
+  .container {
+    margin: 10px;
+  }
 }
 
 article {
